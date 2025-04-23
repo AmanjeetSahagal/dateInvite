@@ -182,15 +182,16 @@ export default function EnchantingDateProposalApp() {
     // Step 2: Food Selection
     <motion.div key="step2" className="text-center" {...fadeInUp}>
       <h2 className="text-3xl font-bold mb-6 text-pink-600">
-        What shall we feast on, my dear?
+        What are you DTF for?
       </h2>
       <div className="grid grid-cols-2 gap-6 mb-6">
         {[
-          { name: "Lasagna", icon: <Utensils /> },
-          { name: "Chicken Pie", icon: <Utensils /> },
-          { name: "Chicken Shawarma", icon: <Utensils /> },
-          { name: "Snack Platter", icon: <Coffee /> },
-          { name: "Mix rice", icon: <Utensils /> },
+          { name: "The Cellar", icon: <Utensils /> },
+          { name: "Mellow Mushroom", icon: <Utensils /> },
+          { name: "HeFun", icon: <Utensils /> },
+          { name: "Mcdonalds", icon: <Utensils /> },
+          { name: "Taco Bell", icon: <Utensils /> },
+          { name: "Italianos", icon: <Utensils /> },
         ].map(({ name, icon }) => (
           <motion.button
             key={name}
@@ -225,19 +226,11 @@ export default function EnchantingDateProposalApp() {
     // Step 3: Movie Selection
     <motion.div key="step3" className="text-center" {...fadeInUp}>
       <h2 className="text-3xl font-bold mb-6 text-pink-600">
-        What shall we watch together?
+        What movie big boy?
       </h2>
       <div className="grid grid-cols-2 gap-6 mb-6">
         {[
-          "The Notebook",
-          "La La Land",
-          "Titanic",
-          "Pride and Prejudice",
-          "Anyone But You",
-          "Past Lives",
-          "Love at First Sight",
-          "Through My Window 3",
-          "Something else",
+          "Type your choice",
         ].map((movie) => (
           <motion.button
             key={movie}
@@ -245,7 +238,7 @@ export default function EnchantingDateProposalApp() {
             whileTap={{ scale: 0.95 }}
             className="bg-white text-pink-600 hover:bg-pink-100 font-bold py-4 px-6 rounded-lg shadow-md transition-colors duration-300"
             onClick={() => {
-              if (movie === "Something else") {
+              if (movie === "Type your choice") {
                 const customMovie = prompt(
                   "What movie would you like to watch?"
                 );
@@ -265,7 +258,7 @@ export default function EnchantingDateProposalApp() {
     // Step 4: Excitement Rating
     <motion.div key="step4" className="text-center" {...fadeInUp}>
       <h2 className="text-3xl font-bold mb-6 text-pink-600">
-        How excited are you for our date?
+        How excited are you?
       </h2>
       <div className="max-w-md mx-auto mb-6 p-4 bg-white rounded-lg shadow-lg">
         <motion.div className="relative h-6 mb-4">
@@ -313,7 +306,7 @@ export default function EnchantingDateProposalApp() {
     // Step 5: Final Message
     <motion.div key="step5" className="text-center" {...fadeInUp}>
       <h2 className="text-4xl font-bold mb-6 text-pink-600">
-        It&apos;s a date, my love!
+        It&apos;s a date!
       </h2>
       <p className="text-xl mb-2 text-pink-500">
         I can&apos;t wait to see you on:
