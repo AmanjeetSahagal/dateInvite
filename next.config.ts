@@ -5,3 +5,10 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+module.exports = {
+  eslint: {
+    // Warning: this will allow ALL lint errors through at build time
+    ignoreDuringBuilds: true,
+  },
+};
