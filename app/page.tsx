@@ -136,7 +136,7 @@ export default function EnchantingDateProposalApp() {
     // Step 1: Date and Time Selection
     <motion.div key="step1" className="text-center" {...fadeInUp}>
       <h2 className="text-3xl font-bold mb-6 text-pink-600">
-        YEYYYYYYYY, WHEN SHALL WE GO?
+        WHEN TO GO?
       </h2>
       <motion.img
         initial={{ opacity: 0, scale: 0.8 }}
